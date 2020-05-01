@@ -1,5 +1,5 @@
 * {
-    -fx-background-color: #232323;
+    -fx-background-color: #4f3961;
 }
 
 .maint-title {
@@ -11,7 +11,7 @@
 
 .content-text{
     -fx-font-size: 15pt;
-    -fx-text-fill: white;
+    -fx-text-fill: #fc9d9d;
 }
 
 .combo-box .text-field {
