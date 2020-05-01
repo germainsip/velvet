@@ -1,0 +1,13 @@
+* {
+    -fx-background-color: #232323;
+}
+
+.maint-title {
+    -fx-font-size: 30pt;
+    -fx-text-fill: white;
+}
+
+.contebt-text{
+    -fx-font-size: 15pt;
+    -fx-text-fill: white;
+}
