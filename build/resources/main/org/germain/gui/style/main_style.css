@@ -1,5 +1,6 @@
 * {
     -fx-background-color: #4f3961;
+    -fx-background-radius: 10px;
 }
 
 .maint-title {

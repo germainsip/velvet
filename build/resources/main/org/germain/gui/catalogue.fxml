@@ -3,6 +3,7 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -11,7 +12,7 @@
 
 <AnchorPane stylesheets="@style/main_style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.germain.gui.CatalogueController">
    <children>
-      <VBox spacing="10.0" styleClass="combo-box" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <VBox spacing="10.0" styleClass="combo-box" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
          <children>
             <Label styleClass="maint-title" text="Velvet Records" />
             <ComboBox promptText="Choisissez  votre album..." />
@@ -19,15 +20,15 @@
                <children>
                   <VBox spacing="10.0">
                      <children>
-                        <Label styleClass="content-text" text="Titre du disque" />
-                        <Label styleClass="content-text" text="Artiste" />
+                        <Label fx:id="disc_title" styleClass="content-text" text="Titre du disque" />
+                        <Label fx:id="disc_artist" styleClass="content-text" text="Artiste" />
                      </children>
                   </VBox>
                   <AnchorPane>
                      <children>
                         <ImageView fitHeight="150.0" fitWidth="152.0" layoutX="47.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../../../../Desktop/IMG_1030.png" />
+                              <Image url="@pictures/disque.png" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="displayAlb" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
@@ -45,4 +46,7 @@
          </children>
       </VBox>
    </children>
+   <effect>
+      <InnerShadow />
+   </effect>
 </AnchorPane>

@@ -3,6 +3,7 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -19,15 +20,15 @@
                <children>
                   <VBox spacing="10.0">
                      <children>
-                        <Label styleClass="content-text" text="Titre du disque" />
-                        <Label styleClass="content-text" text="Artiste" />
+                        <Label fx:id="disc_title" styleClass="content-text" text="Titre du disque" />
+                        <Label fx:id="disc_artist" styleClass="content-text" text="Artiste" />
                      </children>
                   </VBox>
                   <AnchorPane>
                      <children>
                         <ImageView fitHeight="150.0" fitWidth="152.0" layoutX="47.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../../../../Desktop/IMG_1030.png" />
+                              <Image url="@pictures/disque.png" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="displayAlb" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
@@ -46,6 +47,6 @@
       </VBox>
    </children>
    <effect>
-      <DropShadow />
+      <InnerShadow />
    </effect>
 </AnchorPane>
