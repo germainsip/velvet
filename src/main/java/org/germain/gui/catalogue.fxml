@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.DropShadow?>
@@ -10,11 +12,14 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane stylesheets="@style/main_style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.germain.gui.CatalogueController">
+<AnchorPane styleClass="anchor" stylesheets="@style/main_style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.germain.gui.CatalogueController">
    <children>
-      <VBox spacing="10.0" styleClass="combo-box" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+      <VBox spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
          <children>
-            <Label styleClass="maint-title" text="Velvet Records" />
+            <Label styleClass="maint-title" text="Velvet Records">
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
             <ComboBox promptText="Choisissez  votre album..." />
             <HBox spacing="30.0">
                <children>
@@ -42,11 +47,18 @@
                      </children>
                   </AnchorPane>
                </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" />
+               </padding>
             </HBox>
          </children>
+         <styleClass>
+            <String fx:value="combo-box" />
+            <String fx:value="bidule" />
+         </styleClass>
+         <effect>
+            <InnerShadow />
+         </effect>
       </VBox>
    </children>
-   <effect>
-      <InnerShadow />
-   </effect>
 </AnchorPane>

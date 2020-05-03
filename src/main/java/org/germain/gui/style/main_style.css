@@ -1,9 +1,10 @@
 * {
-    -fx-background-color: #4f3961;
+    -fx-background-color: #6d5083;
     -fx-background-radius: 10px;
 }
 
 .maint-title {
+    -fx-font-family: "Arial Rounded MT Bold";
     -fx-font-size: 30pt;
     -fx-text-fill: white;
     -fx-font-weight: bold;
