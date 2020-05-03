@@ -79,7 +79,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\velvet-1.0-SNAPSHOT.jar;%APP_HOME%\lib\javafx-fxml-14-mac.jar;%APP_HOME%\lib\javafx-controls-14-mac.jar;%APP_HOME%\lib\javafx-controls-14.jar;%APP_HOME%\lib\javafx-graphics-14-mac.jar;%APP_HOME%\lib\javafx-graphics-14.jar;%APP_HOME%\lib\javafx-base-14-mac.jar;%APP_HOME%\lib\javafx-base-14.jar
+set CLASSPATH=%APP_HOME%\lib\velvet-1.0-SNAPSHOT.jar;%APP_HOME%\lib\javafx-fxml-14-win.jar;%APP_HOME%\lib\javafx-controls-14-win.jar;%APP_HOME%\lib\javafx-controls-14.jar;%APP_HOME%\lib\javafx-graphics-14-win.jar;%APP_HOME%\lib\javafx-graphics-14.jar;%APP_HOME%\lib\javafx-base-14-win.jar;%APP_HOME%\lib\javafx-base-14.jar
 
 @rem Execute velvet
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %VELVET_OPTS%  -classpath "%CLASSPATH%" org.germain.App %CMD_LINE_ARGS%

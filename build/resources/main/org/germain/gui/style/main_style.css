@@ -1,13 +1,23 @@
 * {
-    -fx-background-color: #232323;
+    -fx-background-color: #4f3961;
 }
 
 .maint-title {
     -fx-font-size: 30pt;
     -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-underline: true;
 }
 
-.contebt-text{
+.content-text{
     -fx-font-size: 15pt;
-    -fx-text-fill: white;
+    -fx-text-fill: #fc9d9d;
+}
+
+.combo-box .text-field {
+    -fx-prompt-text-fill: rgba(255, 0, 0, 0.5) ;
+}
+
+.combo-box-base .text{
+    -fx-fill: #e76969;
 }
