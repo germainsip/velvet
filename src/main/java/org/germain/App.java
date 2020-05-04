@@ -21,7 +21,7 @@ public class App extends Application {
     private double yOffset;
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/org/germain/gui/catalogue.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/org/germain/gui/catalogue_v2.fxml"));
         Scene scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);
         primaryStage.setScene(scene);

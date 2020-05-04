@@ -1,19 +1,19 @@
 * {
-    -fx-background-color: #6d5083;
+    -fx-background-color: #512b58;
     -fx-background-radius: 10px;
 }
 
 .maint-title {
     -fx-font-family: "Arial Rounded MT Bold";
     -fx-font-size: 30pt;
-    -fx-text-fill: white;
+    -fx-text-fill: #ffa372;
     -fx-font-weight: bold;
     -fx-underline: true;
 }
 
 .content-text{
     -fx-font-size: 15pt;
-    -fx-text-fill: #fc9d9d;
+    -fx-text-fill: #ffa372;
 }
 
 .combo-box .text-field {

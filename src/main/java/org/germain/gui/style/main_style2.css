@@ -1,0 +1,38 @@
+* {
+    /*-fx-background-color: transparent;*/
+    -fx-background-radius: 10px;
+}
+.transparent{
+    -fx-background-color: transparent;
+}
+.maint-title {
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-size: 30pt;
+    -fx-text-fill: #ffa372;
+    -fx-font-weight: bold;
+    -fx-underline: true;
+}
+
+.content-text{
+    -fx-font-size: 15pt;
+    -fx-text-fill: #ffa372;
+}
+
+/*.combo-box .text-field {*/
+/*    -fx-prompt-text-fill: rgba(255, 0, 0, 0.5) ;*/
+/*    -fx-background-color: #512b58;*/
+/*}*/
+
+.combo-box {
+    -fx-background-color: #512b58;
+
+}
+
+.combo-box-base .text ,.list-cell:filled:selected,.list-cell:filled:hover{
+    -fx-fill: #e76969;
+    -fx-background-color: #512b58;
+}
+
+/*.list-cell:filled:selected {*/
+/*    -fx-background-color: #512b58;*/
+/*}*/
