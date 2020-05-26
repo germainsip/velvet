@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane styleClass="transparent" stylesheets="@style/main_style2.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.germain.gui.CatalogueController">
+    <children>
+        <ImageView fitHeight="404.0" fitWidth="530.0" layoutX="30.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pictures/blob2.png" />
+            </image>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </ImageView>
+      <Button layoutX="212.0" layoutY="424.0" mnemonicParsing="false" onAction="#offHandle" styleClass="transparent">
+         <graphic>
+            <FontIcon fx:id="off" focusTraversable="true" iconColor="#ffa372" iconLiteral="fa-power-off" iconSize="30" styleClass="maint-title" textAlignment="CENTER" wrappingWidth="32.0" />
+         </graphic>
+      </Button>
+        <VBox layoutX="47.0" layoutY="154.0" prefHeight="275.0" prefWidth="418.0" spacing="10.0" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="47.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="154.0">
+            <children>
+                <Label styleClass="maint-title" text="Velvet Records">
+                    <padding>
+                        <Insets left="45.0" />
+                    </padding></Label>
+                <ComboBox fx:id="choixDisc" onAction="#changeDisc" promptText="Choisissez  votre album...">
+                    <VBox.margin>
+                        <Insets left="5.0" />
+                    </VBox.margin></ComboBox>
+                <HBox spacing="30.0">
+                    <children>
+                        <VBox spacing="10.0">
+                            <children>
+                                <Label fx:id="disc_title" prefHeight="30.0" prefWidth="155.0" styleClass="content-text" text="Titre du disque" />
+                                <Label fx:id="disc_artist" prefHeight="30.0" prefWidth="155.0" styleClass="content-text" text="Artiste" />
+                            </children>
+                        </VBox>
+                        <AnchorPane>
+                            <children>
+                                <ImageView fitHeight="150.0" fitWidth="152.0" layoutX="47.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@pictures/disque.png" />
+                                    </image>
+                                    <effect>
+                                        <DropShadow />
+                                    </effect>
+                                </ImageView>
+                                <ImageView fx:id="displayAlb" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@pictures/Dirt.jpeg" />
+                                    </image>
+                                    <effect>
+                                        <DropShadow />
+                                    </effect>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" />
+                    </padding>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
